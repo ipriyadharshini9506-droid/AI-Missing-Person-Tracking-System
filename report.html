@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Citizen Report</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#020617;
+color:white;
+margin:0;
+}
+
+nav{
+background:#0f172a;
+padding:15px;
+}
+
+nav a{
+color:#38bdf8;
+margin-right:15px;
+text-decoration:none;
+}
+
+.container{
+padding:30px;
+max-width:600px;
+margin:auto;
+}
+
+form{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:15px;
+border-radius:5px;
+border:none;
+}
+
+button{
+background:#38bdf8;
+border:none;
+padding:12px;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="transport.html">Transport</a>
+<a href="report.html">Citizen Report</a>
+</nav>
+
+<div class="container">
+
+<h2>Report Missing Person</h2>
+
+<form onsubmit="submitReport(event)">
+
+<input type="text" placeholder="Person Name" required>
+
+<input type="number" placeholder="Age">
+
+<input type="text" placeholder="Last Seen Location">
+
+<textarea placeholder="Clothing Description"></textarea>
+
+<input type="file">
+
+<button type="submit">Submit Report</button>
+
+</form>
+
+</div>
+
+<script>
+
+function submitReport(e){
+
+e.preventDefault();
+
+alert("Report Submitted Successfully");
+
+}
+
+</script>
+
+</body>
+</html>

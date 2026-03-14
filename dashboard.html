@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VisionTrack AI Dashboard</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+nav{
+background:#020617;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+nav a{
+color:#38bdf8;
+margin-left:15px;
+text-decoration:none;
+}
+
+.container{
+padding:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.number{
+font-size:35px;
+color:#38bdf8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h3>VisionTrack AI</h3>
+
+
+</nav>
+
+<div class="container">
+
+<h2>System Dashboard</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Active Cameras</h3>
+<div class="number">126</div>
+</div>
+
+<div class="card">
+<h3>Missing Reports</h3>
+<div class="number">3</div>
+</div>
+
+<div class="card">
+<h3>AI Matches</h3>
+<div class="number">0</div>
+</div>
+
+<div class="card">
+<h3>Citizen Alerts</h3>
+<div class="number">0</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VisionTrack AI Command Center</title>
+
+<style>
+
+body{
+margin:0;
+font-family: "Orbitron", Arial, sans-serif;
+background:#0b0f17;
+color:#e0e6ed;
+}
+
+/* HEADER */
+
+header{
+background:#111827;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1f2937;
+}
+
+header h1{
+color:#3b82f6;
+font-size:22px;
+margin:0;
+}
+
+nav a{
+color:#cbd5e1;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+/* HERO */
+
+.hero{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#111827,#020617);
+}
+
+.hero h2{
+font-size:40px;
+color:#3b82f6;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+color:#94a3b8;
+}
+
+/* DASHBOARD GRID */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:40px;
+}
+
+/* CARD */
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:10px;
+border:1px solid #1f2937;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#3b82f6;
+}
+
+.card h3{
+color:#3b82f6;
+margin-top:0;
+}
+
+/* LIVE CAMERA */
+
+.camera{
+height:200px;
+background:#020617;
+border:1px dashed #3b82f6;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#64748b;
+}
+
+/* MAP */
+
+.map{
+height:220px;
+background:#020617;
+border:1px dashed #3b82f6;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#64748b;
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+input, textarea{
+margin-bottom:10px;
+padding:10px;
+border-radius:5px;
+border:none;
+background:#020617;
+color:white;
+border:1px solid #1f2937;
+}
+
+button{
+padding:10px;
+background:#3b82f6;
+border:none;
+border-radius:5px;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+border-top:1px solid #1f2937;
+color:#64748b;
+}
+
+</style>
+<style>
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#020617;
+padding:15px 30px;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+.nav-links a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:16px;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>VisionTrack AI</h1>
+
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="transport.html">Transport</a>
+<a href="report.html">Citizen Report</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>AI Missing Person Tracking Command Center</h2>
+
+<p>
+An advanced AI-powered surveillance system that combines face recognition,
+route prediction, transportation monitoring, and crowd intelligence
+to locate missing persons faster in modern smart cities.
+</p>
+
+</section>
+
+<section class="dashboard">
+
+<div class="card">
+
+<h3>Live Surveillance Feed</h3>
+
+<div class="camera">
+CCTV Camera Monitoring
+</div>
+
+<p>AI scans city surveillance cameras to detect missing persons.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Route Prediction Engine</h3>
+
+<p>
+The AI predicts the most likely path based on last-seen location,
+transport routes, and city movement patterns.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Transport Tracking</h3>
+
+<p>
+Analyzes bus, metro, and train camera feeds and GPS data to detect
+movement across transportation systems.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Crowd Density Intelligence</h3>
+
+<p>
+AI identifies crowded areas such as markets and stations
+where the missing person may appear.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Tracking Map</h3>
+
+<div class="map">
+Live Route Tracking Map
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Citizen Reporting Panel</h3>
+
+<form onsubmit="reportSubmit(event)">
+
+<input type="text" placeholder="Name" required>
+
+<input type="number" placeholder="Age" required>
+
+<input type="text" placeholder="Last Seen Location">
+
+<textarea placeholder="Clothing Description"></textarea>
+
+<button type="submit">Submit Report</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+VisionTrack AI | Smart City Missing Person Identification System
+
+</footer>
+
+<script>
+
+function reportSubmit(event){
+
+event.preventDefault();
+
+alert("Report Submitted. Authorities Notified.");
+
+}
+
+</script>
+
+</body>
+</html>
